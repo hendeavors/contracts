@@ -11,14 +11,16 @@ interface IPerson
     function id();
 
     /**
-     * Does this person have a valid id?
-     * @return bool
+     * The persons verification status
+     * @return string
      */
-    function hasId();
+    function status();
 
     /**
      * The service for which this person belongs to
      * @return IService
      */
     function service();
+
+
 }
